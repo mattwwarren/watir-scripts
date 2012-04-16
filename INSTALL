@@ -1,8 +1,8 @@
 To install on CentOS:
 
-# Install some base ruby
-yum install ruby
-yum install rubygems
+# Install some base ruby and watir dependencies
+yum install ruby rubygems firefox
+yum groupinstall "GNOME Desktop Environment"
 
 # Install RVM and get a more useful version
 curl -L get.rvm.io | bash -s stable
