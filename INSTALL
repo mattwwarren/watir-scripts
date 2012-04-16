@@ -1,0 +1,23 @@
+To install on CentOS:
+
+# Install some base ruby
+yum install ruby
+yum install rubygems
+
+# Install RVM and get a more useful version
+curl -L get.rvm.io | bash -s stable
+source ~/.bash_profile
+rvm requirements (This will list out some dependencies that MUST be installed before continuing)
+rvm install 1.9.2
+
+# Use Ruby 1.9.2 by default
+
+rvm use 1.9.2 --default
+
+# Install watir
+
+gem install watir-webdriver
+
+# To use watir include the following after your scripts' shebang
+# require "rubygems"
+# require "watir-webdriver"
